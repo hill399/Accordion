@@ -1,0 +1,36 @@
+{
+    "name": "Accordion",
+    "version": "0.1.0",
+    "description": "Smart Legal Contracts on Chainlink",
+    "scripts": {
+        "compile": "npx truffle compile",
+        "console:dev": "npx truffle console --network cldev",
+        "console:live": "npx truffle console --network live",
+        "depcheck": "echo '@chainlink/box' && depcheck --ignore-dirs=build/contracts || true",
+        "solhint": "solhint ./contracts/**/*.sol",
+        "lint": "yarn solhint",
+        "migrate:dev": "npx truffle migrate --reset --network dev",
+        "migrate:live": "npx truffle migrate --network live",
+        "chainlink:fund-client": "npx truffle exec ./scripts/fund-contract.js && cd ..",
+        "test": "NODE_ENV=test npx truffle test",
+        "remix:truffle": "npx remixd -s . --remix-ide https://remix.ethereum.org/#optimize=false"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@chainlink/contracts": "^0.0.8",
+        "@openzeppelin/contracts": "^3.1.0",
+        "@truffle/hdwallet-provider": "^1.0.40",
+        "fs": "0.0.1-security",
+        "path": "^0.12.7",
+        "remixd": "^0.1.8-alpha.14"
+    },
+    "devDependencies": {
+        "@chainlink/belt": "^0.0.1",
+        "@chainlink/test-helpers": "0.0.5",
+        "@openzeppelin/test-helpers": "^0.5.6",
+        "chai": "^4.2.0",
+        "depcheck": "^0.9.1",
+        "solhint": "^2.1.0",
+        "truffle": "^5.1.5"
+    }
+}

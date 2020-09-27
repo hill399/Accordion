@@ -1,0 +1,554 @@
+{
+	"compiler": {
+		"version": "0.5.10+commit.5a6ea5b1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_oracle",
+						"type": "address"
+					},
+					{
+						"name": "_jobId",
+						"type": "string"
+					},
+					{
+						"name": "_payment",
+						"type": "uint256"
+					}
+				],
+				"name": "deployAccordContract",
+				"outputs": [
+					{
+						"name": "requestId",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "hash",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "cAddr",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getChainlinkToken",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_requestId",
+						"type": "bytes32"
+					},
+					{
+						"name": "_data",
+						"type": "bytes32"
+					}
+				],
+				"name": "fulfillDeployment",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "stateHash",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_oracle",
+						"type": "address"
+					},
+					{
+						"name": "_jobId",
+						"type": "string"
+					},
+					{
+						"name": "_payment",
+						"type": "uint256"
+					}
+				],
+				"name": "triggerAccordContract",
+				"outputs": [
+					{
+						"name": "requestId",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "devAddCorrectFunds",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "payout",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "toString",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "withdrawLink",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_requestId",
+						"type": "bytes32"
+					},
+					{
+						"name": "_payoutAddress",
+						"type": "bytes32"
+					}
+				],
+				"name": "fulfillTrigger",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "lastAddr",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "id",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "depositFunds",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_requestId",
+						"type": "bytes32"
+					},
+					{
+						"name": "_payment",
+						"type": "uint256"
+					},
+					{
+						"name": "_callbackFunctionId",
+						"type": "bytes4"
+					},
+					{
+						"name": "_expiration",
+						"type": "uint256"
+					}
+				],
+				"name": "cancelRequest",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "deployed",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "iAddr",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_link",
+						"type": "address"
+					},
+					{
+						"name": "_iAddr",
+						"type": "address"
+					},
+					{
+						"name": "_cAddr",
+						"type": "address"
+					},
+					{
+						"name": "_payout",
+						"type": "uint256"
+					},
+					{
+						"name": "_deposit",
+						"type": "uint256"
+					},
+					{
+						"name": "_start",
+						"type": "string"
+					},
+					{
+						"name": "_end",
+						"type": "string"
+					},
+					{
+						"name": "_id",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "ChainlinkRequested",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "ChainlinkFulfilled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "ChainlinkCancelled",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"details": "This contract is designed to work on multiple networks, including local test networks",
+			"methods": {
+				"cancelRequest(bytes32,uint256,bytes4,uint256)": {
+					"params": {
+						"_callbackFunctionId": "The bytes4 callback function ID specified for the request to cancel",
+						"_expiration": "The expiration generated for the request to cancel",
+						"_payment": "The payment specified for the request to cancel",
+						"_requestId": "The ID that was generated for the request to cancel"
+					}
+				},
+				"constructor": {
+					"details": "Sets the storage for the specified addresses",
+					"params": {
+						"_link": "The address of the LINK token contract"
+					}
+				},
+				"getChainlinkToken()": {
+					"details": "This is the public implementation for chainlinkTokenAddress, which is an internal method of the ChainlinkClient contract"
+				}
+			},
+			"title": "MyContract is an example contract which requests data from the Chainlink network"
+		},
+		"userdoc": {
+			"methods": {
+				"cancelRequest(bytes32,uint256,bytes4,uint256)": {
+					"notice": "Call this method if no response is received within 5 minutes"
+				},
+				"constructor": "Deploy the contract with a specified address for the LINK and Oracle contract addresses",
+				"getChainlinkToken()": {
+					"notice": "Returns the address of the LINK token"
+				},
+				"withdrawLink()": {
+					"notice": "Allows the owner to withdraw any LINK balance on the contract"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/AccordDeploy.sol": "AccordFund"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.5/Chainlink.sol": {
+			"keccak256": "0x2e22ca7d3cfdca8f53ff01c25460f72c2634fd778746f9ec2e608412d0ab037c",
+			"urls": [
+				"bzzr://cee187a0a12f045523125e4522ddde4610ea5f000c1f92acbb7be778eaf8a4ed",
+				"dweb:/ipfs/QmZhfgfZVmVgjJtqpWAtwiH1Cq5DHwL3QMn17MRuFHRZJJ"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/ChainlinkClient.sol": {
+			"keccak256": "0xc0c8c49ae17737caa957007286fec8029a3bc0c14e3550c9bc17caa7ec73bd2f",
+			"urls": [
+				"bzzr://2d16fab052156e663628e3c814866d7478a38e1d139f2a89b004de378f5f68a4",
+				"dweb:/ipfs/QmcU33w91dYFw1UZ8uXCktpyEzWzTTkAMtyCfmkwAPVNGk"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/interfaces/ChainlinkRequestInterface.sol": {
+			"keccak256": "0xce2ef63d4dba0dfd878b4d4a328c97815937822c39f626f2af173565e674750e",
+			"urls": [
+				"bzzr://e11a8596788401106ab89cca333dff27e1847fbbb2e624a81a05e1230d79ad80",
+				"dweb:/ipfs/QmXvqLjZz9J71G83Twk8gduZ7aWLxRCTCVcNuDpQykRahJ"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/interfaces/ENSInterface.sol": {
+			"keccak256": "0x87607c12cc84c57afbcb38f00d96ae67c433474c1310a0c2798e2a728f41750d",
+			"urls": [
+				"bzzr://10a880076bf0b03ef9bd153e7f6ca18e65f15c9f7bf4b0883e93b8de67dd22c2",
+				"dweb:/ipfs/QmQDfq5Lbn9pjfPufGF5DAqFerhCFenFBtquXSMYmYK2T7"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/interfaces/LinkTokenInterface.sol": {
+			"keccak256": "0x592d87884106ba82cedbe79922de9cfaf28b211a09f9be243ad767d3baa1cb90",
+			"urls": [
+				"bzzr://1f4a72f8b790700d839354d412df656d5a59877264c6e126a1deae6164de9e7d",
+				"dweb:/ipfs/QmPp9qbHXNFjhSQRW6KmDzWPGC8AMs1pygkD1JYUmmLe1u"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/interfaces/PointerInterface.sol": {
+			"keccak256": "0xdc08ab9320d187dbaffa20dc31d331f8067fa534c9a654aab8f9ffa63df450da",
+			"urls": [
+				"bzzr://7e34f1d953ea72152d9daffea28117d5d31d85891f2cac5f1ded4a589cad4874",
+				"dweb:/ipfs/QmUdKi3oxJsLcLiwoXzycT49QvqWPvgStys2fix68wG4xE"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/vendor/Buffer.sol": {
+			"keccak256": "0x0a3bc9b2ae59b3a51f85050a85f77611b44d12d0185dc5744db997e15ccc3ef4",
+			"urls": [
+				"bzzr://f499c6f1912d0fa8a62ce1ef81cf57c25fa9b15f5a1e2aeaf92dc9d2d1916277",
+				"dweb:/ipfs/QmXcSRaBsXix4xu4LQDgEmEtwhrDzeTSFqJBRxS6Paiy4h"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/vendor/CBOR.sol": {
+			"keccak256": "0x463c926cc78dfc3cbd27735a5aafdce495be4e56dd5a852e8d784c238d899877",
+			"urls": [
+				"bzzr://9d9cf37482cc90ab4963cfdff53529e961ab60ffd9213aff7720edd5f86abc35",
+				"dweb:/ipfs/QmQ9YgWUndvedFCKVmoTC68wdcksnEKgSXMySeEqAV4q1q"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/vendor/ENSResolver.sol": {
+			"keccak256": "0x64fcf7d2fc5efc87eaf7eba4a8f69af4d28986b6e4fb3590f076eb41ce40296e",
+			"urls": [
+				"bzzr://09e1bdee1831b5e85d3c7b5d96b7c26ad54e96d654cfaf18f58449c4c45961fc",
+				"dweb:/ipfs/QmagWcqyzWcQKXpff1g92nR3VdJMndpBEkSEb29LqtYrSz"
+			]
+		},
+		"@chainlink/contracts/src/v0.5/vendor/SafeMath.sol": {
+			"keccak256": "0x3c9aed70447b5aafb455bf2b124405f87979c19e628553c194f741660197265b",
+			"urls": [
+				"bzzr://560515f0c0118bae3cb38a64c2b67a75a80e87647618ba02f1e614a113cdfeea",
+				"dweb:/ipfs/QmPxodPhEfy2ZhvZ8o5z43sdwvGReuXXMXSYtFVpUPz5Xu"
+			]
+		},
+		"localhost/contracts/AccordDeploy.sol": {
+			"keccak256": "0x870e6ac6d57764d16b4a561187ae776a9ff3be78051a389d75a2e3548c5bc00a",
+			"urls": [
+				"bzzr://685c293a668d8a766fc96a5e6d0c516f3945d7fc6df6cb4fbe5fca0c37d51b4a",
+				"dweb:/ipfs/QmVwojxvDbzi2fYT44iiPMcqxYrEZu3GMa83yWkxvbWsr9"
+			]
+		},
+		"localhost/oz-25/contracts/GSN/Context.sol": {
+			"keccak256": "0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061",
+			"urls": [
+				"bzzr://51482c01bddf23793bddee43b60ab9578a62948a4f2082def24ea792a553b055",
+				"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG"
+			]
+		},
+		"localhost/oz-25/contracts/ownership/Ownable.sol": {
+			"keccak256": "0x6fb9d7889769d7cc161225f9ef7a90e468ba9788b253816f8d8b6894d3472c24",
+			"urls": [
+				"bzzr://ab46c9368bc3abdded5eb85858304518c8a0291060ab42087075d759dbf3925f",
+				"dweb:/ipfs/Qmb7TChG6DsEDX7LooJ4vmxot19f7VXX8S1zUGPeJTWbwZ"
+			]
+		}
+	},
+	"version": 1
+}

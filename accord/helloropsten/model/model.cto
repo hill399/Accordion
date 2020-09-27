@@ -1,0 +1,32 @@
+namespace org.hill399.hellochainlink
+
+import org.accordproject.cicero.contract.* from https://models.accordproject.org/cicero/contract.cto
+import org.accordproject.cicero.runtime.* from https://models.accordproject.org/cicero/runtime.cto
+
+transaction MyRequest extends Request {
+  o String input
+}
+
+transaction ReadingRequest extends Request {
+  o DateTime ts
+  o Double reading
+}
+
+transaction ReadingResponse extends Response {
+  o String	payoutAddr 
+}
+
+asset HelloChainlinkClause extends AccordClause {
+  o String insurerName
+  o String insurerAddr
+  o String clientName
+  o String clientAddr
+  o Double tempMin
+  o Double tempMax
+  o Double locLat
+  o Double locLon
+  o Double payout
+  o Double deposit
+  o DateTime start
+  o DateTime end
+}
